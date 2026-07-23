@@ -1,7 +1,26 @@
 aid: 2ulaundry
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/2ulaundry.png
 name: 2ULaundry
-description: 2ULaundry is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 2ULaundry is a laundry and dry cleaning pickup-and-delivery service headquartered
+  in Charlotte, North Carolina and backed by Techstars. Customers schedule pickups through a
+  mobile app, leave color-coded bags at their door, and receive cleaned items back within
+  one to two business days. Services include residential wash-and-fold, delicate garment care,
+  dry cleaning, and household linens, plus commercial laundry solutions for Airbnbs, spas,
+  gyms, salons, and healthcare facilities. The company operates its own processing facilities
+  and a fleet-based delivery network across its Southeast US markets. This API Evangelist profile
+  was surfaced from the Techstars portfolio and enriched; 2ULaundry is a consumer service company
+  and publishes no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/2ulaundry/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,12 +33,41 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Laundry
+- Dry Cleaning
+- Delivery
+- Logistics
+- Consumer Services
+- On-Demand
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/2ulaundry-domain-security.yml
 - type: Website
   url: https://2ulaundry.com/
+- type: Pricing
+  url: https://www.2ulaundry.com/laundry-service-prices/
+- type: GettingStarted
+  url: https://www.2ulaundry.com/residential-commercial-what-to-expect/
+- type: Support
+  url: https://www.2ulaundry.com/support/
+- type: HelpCenter
+  url: https://support.2ulaundry.com/hc/en-us
+- type: Blog
+  url: https://www.2ulaundry.com/blog/
+- type: TermsOfService
+  url: https://www.2ulaundry.com/terms/
+- type: PrivacyPolicy
+  url: https://www.2ulaundry.com/privacy/
+- type: GitHubOrganization
+  url: https://github.com/2ulaundry
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
